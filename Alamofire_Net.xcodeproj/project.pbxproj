@@ -14,7 +14,22 @@
 		D96C539821D15AD200F286D1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D96C539621D15AD200F286D1 /* LaunchScreen.storyboard */; };
 		D96C53A021D15F1100F286D1 /* Cartfile in Resources */ = {isa = PBXBuildFile; fileRef = D96C539F21D15F1100F286D1 /* Cartfile */; };
 		D96C53A221D162C600F286D1 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D96C53A121D162C600F286D1 /* Alamofire.framework */; };
+		D96C53A421D167E000F286D1 /* Alamofire.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = D96C53A121D162C600F286D1 /* Alamofire.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		D96C53A521D167E000F286D1 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				D96C53A421D167E000F286D1 /* Alamofire.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		D96C538A21D15AD100F286D1 /* Alamofire_Net.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Alamofire_Net.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -81,6 +96,7 @@
 				D96C538621D15AD100F286D1 /* Sources */,
 				D96C538721D15AD100F286D1 /* Frameworks */,
 				D96C538821D15AD100F286D1 /* Resources */,
+				D96C53A521D167E000F286D1 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
