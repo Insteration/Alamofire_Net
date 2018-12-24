@@ -11,10 +11,9 @@ import Alamofire
 
 class ViewController: UIViewController {
     @IBOutlet weak var jsonTextLabel: UILabel!
-    
     @IBOutlet weak var responceTextLabel: UILabel!
-    
     @IBOutlet weak var jsonDataPickerView: UIPickerView!
+    
     var ids = [Int]()
     var id = 1
 
