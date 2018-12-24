@@ -7,14 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D919263421D16B3300E32E4B /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D919263321D16B3300E32E4B /* Alamofire.framework */; };
+		D919263621D16B3C00E32E4B /* Alamofire.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = D919263321D16B3300E32E4B /* Alamofire.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		D96C538E21D15AD100F286D1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D96C538D21D15AD100F286D1 /* AppDelegate.swift */; };
 		D96C539021D15AD100F286D1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D96C538F21D15AD100F286D1 /* ViewController.swift */; };
 		D96C539321D15AD100F286D1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D96C539121D15AD100F286D1 /* Main.storyboard */; };
 		D96C539521D15AD200F286D1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D96C539421D15AD200F286D1 /* Assets.xcassets */; };
 		D96C539821D15AD200F286D1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D96C539621D15AD200F286D1 /* LaunchScreen.storyboard */; };
 		D96C53A021D15F1100F286D1 /* Cartfile in Resources */ = {isa = PBXBuildFile; fileRef = D96C539F21D15F1100F286D1 /* Cartfile */; };
-		D96C53A221D162C600F286D1 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D96C53A121D162C600F286D1 /* Alamofire.framework */; };
-		D96C53A421D167E000F286D1 /* Alamofire.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = D96C53A121D162C600F286D1 /* Alamofire.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -24,7 +24,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				D96C53A421D167E000F286D1 /* Alamofire.framework in Embed Frameworks */,
+				D919263621D16B3C00E32E4B /* Alamofire.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -32,6 +32,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		D919263321D16B3300E32E4B /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Alamofire.framework; sourceTree = SOURCE_ROOT; };
 		D96C538A21D15AD100F286D1 /* Alamofire_Net.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Alamofire_Net.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D96C538D21D15AD100F286D1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D96C538F21D15AD100F286D1 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -40,7 +41,6 @@
 		D96C539721D15AD200F286D1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D96C539921D15AD200F286D1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D96C539F21D15F1100F286D1 /* Cartfile */ = {isa = PBXFileReference; lastKnownFileType = text; path = Cartfile; sourceTree = SOURCE_ROOT; };
-		D96C53A121D162C600F286D1 /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = Carthage/Build/iOS/Alamofire.framework; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -48,7 +48,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D96C53A221D162C600F286D1 /* Alamofire.framework in Frameworks */,
+				D919263421D16B3300E32E4B /* Alamofire.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -74,7 +74,7 @@
 		D96C538C21D15AD100F286D1 /* Alamofire_Net */ = {
 			isa = PBXGroup;
 			children = (
-				D96C53A121D162C600F286D1 /* Alamofire.framework */,
+				D919263321D16B3300E32E4B /* Alamofire.framework */,
 				D96C538D21D15AD100F286D1 /* AppDelegate.swift */,
 				D96C538F21D15AD100F286D1 /* ViewController.swift */,
 				D96C539F21D15F1100F286D1 /* Cartfile */,
@@ -311,6 +311,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
+					"$(PROJECT_DIR)",
 				);
 				INFOPLIST_FILE = Alamofire_Net/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -333,6 +334,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
+					"$(PROJECT_DIR)",
 				);
 				INFOPLIST_FILE = Alamofire_Net/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
